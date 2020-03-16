@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Payment.API</name>
+    </assembly>
+    <members>
+        <member name="M:Payment.API.Controllers.PaymentController.GetPaymentsAsync(System.Guid)">
+            <summary>
+            Retrieves details of the account and payment requests
+            </summary>
+            <param name="accountId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Payment.API.Controllers.PaymentController.CreatePaymentAsync(System.Guid,Payment.API.Application.Commands.CreatePaymentCommand)">
+            <summary>
+            Creates a payment request against the nominated account
+            </summary>
+            <param name="accountId"></param>
+            <param name="createPaymentCommand"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Payment.API.Controllers.PaymentController.CancelPaymentAsync(System.Guid,System.Guid,Payment.API.Application.Commands.CancelReasonDTO)">
+            <summary>
+            Cancels a payment request
+            </summary>
+            <param name="accountId"></param>
+            <param name="id"></param>
+            <param name="cancelReason"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Payment.API.Controllers.PaymentController.ProcessPaymentAsync(System.Guid,System.Guid)">
+            <summary>
+            Processes a payment request
+            </summary>
+            <param name="accountId"></param>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Payment.API.Domain.Model.Account">
+            <summary>
+            Represents an account belonging to a user
+            </summary>
+        </member>
+        <member name="T:Payment.API.Domain.Model.PaymentRequest">
+            <summary>
+            Represents a payment request
+            </summary>
+        </member>
+    </members>
+</doc>
